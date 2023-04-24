@@ -1,6 +1,6 @@
 # 7-docs demo
 
-Source of [7-docs-demo-react.deno.dev](https://7-docs-demo-react.deno.dev), built with:
+Source of [7d.vercel.app](https://7d.vercel.app), built with:
 
 - Node.js + Vercel Edge
 - [@7-docs/edge](https://www.npmjs.com/package/@7-docs/edge)
