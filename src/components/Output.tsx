@@ -5,10 +5,11 @@ import tsx from 'react-syntax-highlighter/dist/cjs/languages/prism/tsx';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import type { PropsWithChildren } from 'react';
 
-type Props = PropsWithChildren<{
+type Props = {
   inline?: boolean;
   className?: string;
-}>;
+  children: string;
+};
 
 SyntaxHighlighter.registerLanguage('typescript', ts);
 SyntaxHighlighter.registerLanguage('tsx', tsx);
@@ -47,6 +48,7 @@ export function Output(props: { text: string }) {
   return (
     <ReactMarkdown
       components={{
+        // @ts-ignore
         code: Code
       }}>
       {props.text}

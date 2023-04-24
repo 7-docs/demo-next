@@ -9,7 +9,7 @@ import { namespace, suggestions } from '../../config';
 import { useStream } from '../lib/useStream';
 import type { FormEventHandler, ChangeEventHandler } from 'react';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ weight: '300', subsets: ['latin'] });
 
 export default function Main() {
   const [conversation, dispatch] = useConversation();
